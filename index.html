@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Patroni Pizza | Mesma receita desde 1984</title>
+<meta name="description" content="A maior rede de pizzas, massas, carnes e petiscos do país. Mais de 40 milhões de pizzas com a mesma receita desde 1984. Pede Q Chega!">
+<meta name="theme-color" content="#161213">
+<meta property="og:title" content="Patroni Pizza | Mesma receita desde 1984">
+<meta property="og:description" content="Mais de 40 milhões de pizzas com a mesma receita desde 1984. As próximas 2 podem ser suas!">
+<meta property="og:image" content="img/fatia-poster.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<!-- INTRO -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-glow"></div>
+  <img class="intro-selo" src="img/selo.png" alt="">
+  <div class="intro-year"><span id="introYear">1984</span></div>
+  <div class="intro-line">mesma receita</div>
+  <button class="intro-skip" type="button">pular</button>
+</div>
+
+<!-- HEADER -->
+<header class="hd" id="hd">
+  <a class="hd-logo" href="#top" aria-label="Patroni Pizza, início"><img src="img/logo.png" alt="Patroni desde 1984" width="1237" height="269"></a>
+  <nav class="hd-nav" aria-label="Seções">
+    <a href="#historia">História</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#eco">Eco Pizza</a>
+    <a href="#franquia">Seja um franqueado</a>
+  </nav>
+  <a class="btn btn-red hd-cta" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">Pede Q Chega</a>
+  <button class="hd-burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="menu" id="menu" hidden>
+  <a href="#historia">História</a>
+  <a href="#cardapio">Cardápio</a>
+  <a href="#don">O Don</a>
+  <a href="#eco">Eco Pizza</a>
+  <a href="#franquia">Seja um franqueado</a>
+  <a class="btn btn-red" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">Pede Q Chega</a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-stick">
+    <canvas class="embers" id="embers"></canvas>
+    <div class="hero-word" aria-hidden="true"><span class="hw-l">PATR</span><span class="hw-r">ÃO</span></div>
+    <div class="hero-plate" id="plate">
+      <svg class="ring" viewBox="0 0 400 400" aria-hidden="true">
+        <defs><path id="ringPath" d="M200,200 m-182,0 a182,182 0 1,1 364,0 a182,182 0 1,1 -364,0"/></defs>
+        <text><textPath href="#ringPath" startOffset="0">MESMA RECEITA DESDE 1984 ✦ FORNO A LENHA ✦ PEDE Q CHEGA ✦ VEM Q TEM ✦ </textPath></text>
+      </svg>
+      <div class="plate-video">
+        <video src="video/fatia.mp4" poster="img/fatia-poster.jpg" muted loop playsinline autoplay preload="auto"></video>
+      </div>
+    </div>
+    <div class="hero-copy">
+      <p class="script">a pizza do</p>
+      <h1 class="sr-only">A pizza do Patrão. Patroni Pizza, mesma receita desde 1984.</h1>
+      <p class="hero-sub">Mais de <strong>40 milhões de pizzas</strong> com a mesma receita desde 1984. As próximas 2 podem ser suas!</p>
+      <div class="hero-ctas">
+        <a class="btn btn-red" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">Pede Q Chega <i>→</i></a>
+        <a class="btn btn-ghost" href="#cardapio">Ver o cardápio</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <span>Forno a lenha</span>
+      <span class="dot"></span>
+      <span>225 lojas no país</span>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span>role</span><i></i></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="band" aria-hidden="true">
+  <div class="band-track">
+    <span>PEDE Q CHEGA</span><b>✦</b><span>VEM Q TEM</span><b>✦</b><span>MESMA RECEITA DESDE 1984</span><b>✦</b><span>FORNO A LENHA</span><b>✦</b>
+    <span>PEDE Q CHEGA</span><b>✦</b><span>VEM Q TEM</span><b>✦</b><span>MESMA RECEITA DESDE 1984</span><b>✦</b><span>FORNO A LENHA</span><b>✦</b>
+  </div>
+</div>
+
+<!-- HISTÓRIA -->
+<section class="story" id="historia">
+  <div class="story-stick">
+    <div class="story-head">
+      <p class="kicker">Desde 1984</p>
+      <h2>Começou<br>por causa<br>de um <em>pai.</em></h2>
+      <div class="story-progress"><i id="storyBar"></i></div>
+    </div>
+    <div class="story-track" id="storyTrack">
+      <article class="frame f1">
+        <figure class="polaroid tilt-l">
+          <img src="img/loja-1984.jpg" alt="Primeira loja Patroni, no bairro do Paraíso, São Paulo, em 1984" loading="lazy" width="624" height="380">
+          <figcaption>Paraíso, São Paulo. 1984.</figcaption>
+        </figure>
+        <div class="frame-txt">
+          <span class="frame-year">1984</span>
+          <p>Uma loja de <strong>“Pizzas para Viagem”</strong> numa esquina do Paraíso, em São Paulo. Entregas a domicílio, muito trabalho e pouco dinheiro.</p>
+        </div>
+      </article>
+      <article class="frame f2">
+        <figure class="polaroid tilt-r">
+          <img src="img/pai-e-filho.jpg" alt="Rubens Augusto Junior com o pai" loading="lazy" width="1100" height="835">
+          <figcaption>Rubens e o pai.</figcaption>
+        </figure>
+        <blockquote class="frame-quote">
+          <p>“Lá atrás, em 1984, jamais imaginei que a pizzaria de entregas a domicílio que inaugurei com muito custo e pouco dinheiro para curar meu pai da depressão pudesse trilhar uma história tão bonita.”</p>
+          <cite>Rubens Augusto Junior, fundador</cite>
+        </blockquote>
+      </article>
+      <article class="frame f3">
+        <figure class="polaroid tilt-l wide">
+          <img src="img/trattoria.jpg" alt="Loja Patroni Pizza e Trattoria" loading="lazy" width="1000" height="574">
+          <figcaption>Pizzaria + trattoria.</figcaption>
+        </figure>
+        <div class="frame-txt">
+          <span class="frame-year">hoje</span>
+          <p>Mais de <strong>225 lojas</strong> físicas e on-line por todo o país e <strong>mais de 3 mil famílias</strong> empregadas. Pizzas, massas, carnes e petiscos.</p>
+        </div>
+      </article>
+      <article class="frame f4">
+        <figure class="polaroid tilt-r">
+          <img src="img/fundador.jpg" alt="Rubens Augusto Junior, fundador da Patroni, em frente a uma loja" loading="lazy" width="1100" height="839">
+          <figcaption>O Patrão aprova tudo.</figcaption>
+        </figure>
+        <blockquote class="frame-quote">
+          <p>“Tudo, simplesmente tudo o que vendemos nas lojas passa por aprovação do nosso fundador. O segredo da Patroni está em manter as raízes.”</p>
+          <cite>André Lima, diretor de produção e logística</cite>
+        </blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS -->
+<section class="nums" id="numeros">
+  <div class="nums-big">
+    <p class="kicker">pizzas com a mesma receita</p>
+    <div class="odo" id="odo" data-to="40000000" aria-label="40.000.000"></div>
+  </div>
+  <div class="nums-grid">
+    <div class="num"><b data-count="41">0</b><span>anos no mercado</span></div>
+    <div class="num"><b data-count="225">0</b><span>lojas em todo o país</span></div>
+    <div class="num"><b data-count="6" data-suffix="x">0</b><span>eleita a melhor franquia de alimentação do Brasil</span></div>
+    <div class="num"><b data-count="3" data-suffix=" mil">0</b><span>famílias empregadas</span></div>
+  </div>
+</section>
+
+<!-- CARDÁPIO -->
+<section class="menu-sec" id="cardapio">
+  <div class="menu-head">
+    <p class="kicker">Cardápio</p>
+    <h2>Escolhe o sabor.<br><span>A pizza se monta.</span></h2>
+  </div>
+  <div class="mesa">
+    <div class="mesa-pizza">
+      <div class="board"></div>
+      <canvas id="pizza" width="900" height="900" aria-label="Ilustração da pizza escolhida"></canvas>
+      <div class="pizza-tag" id="pizzaTag">Don Patroni</div>
+    </div>
+    <div class="mesa-side">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <ul class="flavors" id="flavors"></ul>
+      <div class="flavor-card" id="flavorCard" aria-live="polite">
+        <h3 id="fcName">Don Patroni</h3>
+        <p id="fcDesc"></p>
+        <div class="fc-actions">
+          <a class="btn btn-red" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">Pedir essa <i>→</i></a>
+          <a class="link" href="https://patronipizza.com.br/storage/pdf/TABELA%20NUTRICIONAL%202024.pdf" target="_blank" rel="noopener">Tabela nutricional</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="menu-note">Também tem massas, parmegianas, carnes, petiscos e chopp gelado. <span class="script-inline">Tem pratos que passam. Parmegiana Patroni é para sempre.</span></p>
+</section>
+
+<!-- O DON -->
+<section class="don" id="don">
+  <div class="don-frame">
+    <video src="video/don.mp4" poster="img/don-poster.jpg" muted loop playsinline preload="none" data-lazy></video>
+    <div class="don-bars"></div>
+    <div class="don-grain"></div>
+  </div>
+  <div class="don-copy">
+    <p class="script">o Don recomenda</p>
+    <h2>A pizza<br>vale o pedido.</h2>
+    <a class="btn btn-red" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">Não pensa muito. Pede! <i>→</i></a>
+  </div>
+</section>
+
+<!-- ECO PIZZA -->
+<section class="eco" id="eco">
+  <canvas class="eco-canvas" id="ecoCanvas"></canvas>
+  <div class="eco-inner">
+    <p class="kicker">Projeto Eco Pizza</p>
+    <h2>Nossa lenha<br>não derruba<br><em>árvore!</em></h2>
+    <div class="eco-stat">
+      <b data-count="100">0</b>
+      <span>estádios de futebol preservados por ano, pelo uso de lenha ecológica.</span>
+    </div>
+    <img class="eco-premio" src="img/premio-sustentabilidade.png" alt="Prêmio Destaque Sustentabilidade, AFRAS e ABF" loading="lazy" width="852" height="962">
+  </div>
+</section>
+
+<!-- FEED -->
+<section class="feed" id="feed">
+  <div class="feed-head">
+    <h2>No feed<br><span>@patronipizzaoficial</span></h2>
+    <p>Arrasta pro lado <i>↔</i></p>
+  </div>
+  <div class="feed-track" id="feedTrack">
+    <a class="post" href="https://www.instagram.com/p/DduYlzKm2XU/" target="_blank" rel="noopener"><img src="img/chique.jpg" alt="Post: acho chique o rolê que termina com pizza" loading="lazy"><span>Tem coisa mais chique do que um rolê que termina com pizza?</span></a>
+    <a class="post" href="https://www.instagram.com/p/DeejqqMNCGH/" target="_blank" rel="noopener"><img src="img/criancas.jpg" alt="Post: hoje pode repetir a fatia" loading="lazy"><span>Pode repetir a fatia hoje, amanhã e o mês inteiro!</span></a>
+    <a class="post" href="https://www.instagram.com/p/DcZfUlzmjOp/" target="_blank" rel="noopener"><img src="img/parmegiana.jpg" alt="Post: parmegiana é clássico" loading="lazy"><span>Tem pratos que passam. Parmegiana Patroni é para sempre.</span></a>
+    <a class="post" href="https://www.instagram.com/p/Dd1W578m9xQ/" target="_blank" rel="noopener"><img src="img/culpa.jpg" alt="Post: você disse que ia comer só alguma coisinha" loading="lazy"><span>A culpa não é minha.</span></a>
+    <a class="post" href="https://www.instagram.com/p/DcB6DkWmheS/" target="_blank" rel="noopener"><img src="img/happy.jpg" alt="Post: tábua de petisco com Amstel" loading="lazy"><span>O Happy Hour fica completo com a dupla certa.</span></a>
+    <a class="post" href="https://www.instagram.com/p/DdeLyJeFOfh/" target="_blank" rel="noopener"><img src="img/matematica.jpg" alt="Post: hoje eu vou economizar" loading="lazy"><span>Menos preço + mais pizza = economia.</span></a>
+    <a class="post" href="https://www.instagram.com/p/DeEsVzzo0iC/" target="_blank" rel="noopener"><img src="img/voto.jpg" alt="Post: o voto é secreto, a sua pizza favorita não" loading="lazy"><span>Seu voto é secreto. Sua pizza favorita, a gente já sabe.</span></a>
+    <a class="post" href="https://www.instagram.com/p/DdcTiSPAHN1/" target="_blank" rel="noopener"><img src="img/bolso.jpg" alt="Post: até 50% off em pizzas selecionadas" loading="lazy"><span>A fome queria pizza, o bolso queria desconto.</span></a>
+  </div>
+</section>
+
+<!-- FRANQUIA -->
+<section class="fran" id="franquia">
+  <div class="fran-head">
+    <p class="kicker">Seja um franqueado</p>
+    <h2>Muita história,<br>uma franquia<br>e <em>3 marcas!</em></h2>
+    <p class="fran-lead">Nas lojas em shopping, até 3 marcas vendem delivery num só ponto comercial. O modelo 3x1 também funciona em pontos de rua, com balcão e delivery ou só delivery. Lanches, pizzas e culinária brasileira: os segmentos mais fortes.</p>
+  </div>
+
+  <div class="models" id="models">
+    <article class="model is-open">
+      <img src="img/fast-service.jpg" alt="Loja Patroni modelo Fast Service em shopping" loading="lazy">
+      <div class="model-body">
+        <span class="model-n">01</span>
+        <h3>Fast Service</h3>
+        <p>Shopping centers de lazer ou corporativos, para todos os públicos. Mix pronto para operar nos 3 dayparts: pizzas, carnes, massas, chopp e petiscos.</p>
+      </div>
+    </article>
+    <article class="model">
+      <img src="img/casa-do-don.jpg" alt="Fachada da Casa do Don, ristorante e pizzeria" loading="lazy">
+      <div class="model-body">
+        <span class="model-n">02</span>
+        <h3>Casa do Don</h3>
+        <p>Casual dining com ambiente temático, inspirado no cotidiano e estilo de vida do Don Patroni. Trattoria completa, carta de vinhos e as raízes da pizza Patroni.</p>
+      </div>
+    </article>
+    <article class="model">
+      <img src="img/expresso.jpg" alt="Balcão Patroni Expresso, pizzas na hora" loading="lazy">
+      <div class="model-body">
+        <span class="model-n">03</span>
+        <h3>Expresso</h3>
+        <p>Lojas compactas para alto tráfego e venda por impulso: estádios, faculdades, estações, centros empresariais e eventos. Cardápio enxuto e rápido.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="steps">
+    <h3 class="script">cada franqueado é tratado como um filho</h3>
+    <ol>
+      <li><b>1</b>Ajudamos na busca e aprovação do ponto comercial.</li>
+      <li><b>2</b>Com base no seu budget, escolhemos juntos o modelo de negócio.</li>
+      <li><b>3</b>Elaboramos o projeto arquitetônico da sua loja.</li>
+      <li><b>4</b>Consultoria ao longo de toda a obra e da inauguração.</li>
+      <li><b>5</b>Nossa equipe de treinamento fica até 15 dias na operação da sua loja.</li>
+    </ol>
+  </div>
+
+  <form class="fform" id="fform" novalidate>
+    <div class="fform-head">
+      <h3>Entre para nossa <em>famiglia</em>, seja Patroni!</h3>
+      <p>Preenche aqui e a conversa continua no WhatsApp com o time de expansão.</p>
+    </div>
+    <label><span>Nome</span><input name="nome" required autocomplete="name"></label>
+    <label><span>Cidade</span><input name="cidade" required autocomplete="address-level2"></label>
+    <fieldset class="chips">
+      <legend>Modelo de interesse</legend>
+      <label><input type="radio" name="modelo" value="Fast Service" checked><span>Fast Service</span></label>
+      <label><input type="radio" name="modelo" value="Casa do Don"><span>Casa do Don</span></label>
+      <label><input type="radio" name="modelo" value="Expresso"><span>Expresso</span></label>
+      <label><input type="radio" name="modelo" value="Ainda não sei"><span>Ainda não sei</span></label>
+    </fieldset>
+    <label class="full"><span>Mensagem (opcional)</span><textarea name="msg" rows="3"></textarea></label>
+    <button class="btn btn-red full" type="submit">Conversar no WhatsApp <i>→</i></button>
+    <p class="fform-err" id="fformErr" hidden>Preenche nome e cidade pra gente continuar.</p>
+  </form>
+
+  <blockquote class="fran-quote">
+    <p>“Se depender de mim eu continuo na Patroni pro resto da vida. Eu me sinto respeitado.”</p>
+    <cite>José Machado, profissional de limpeza</cite>
+  </blockquote>
+</section>
+
+<!-- PRÊMIOS -->
+<section class="awards">
+  <h2>6 vezes eleita a <em>melhor franquia</em> de alimentação do Brasil.</h2>
+  <div class="awards-row">
+    <img src="img/premio-abf.png" alt="ABF Excelência em Franchising 2020" loading="lazy" width="441" height="398">
+    <img src="img/premio-alshop.png" alt="Prêmio Lojista Alshop, Hors Concours" loading="lazy" width="441" height="397">
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <a class="ft-big" href="http://ifoodbr.onelink.me/F4X4/patronipizza" target="_blank" rel="noopener">
+    <span>PEDE</span><span class="q">Q</span><span>CHEGA</span>
+  </a>
+  <p class="ft-line">Tem sempre uma Patroni perto de você.</p>
+  <div class="ft-row">
+    <img class="ft-logo" src="img/logo.png" alt="Patroni desde 1984" loading="lazy">
+    <nav class="ft-links" aria-label="Links">
+      <a href="https://www.instagram.com/patronipizzaoficial/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/PatroniOficial" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/user/PatroniOficial/videos" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://patronipizza.com.br/cupons" target="_blank" rel="noopener">Cupons</a>
+      <a href="https://patronipizza.com.br/contato" target="_blank" rel="noopener">Trabalhe conosco</a>
+    </nav>
+  </div>
+  <p class="ft-copy">Patroni © <span id="yr">2026</span>. Todos os direitos reservados.</p>
+</footer>
+
+<script src="main.js?v=1"></script>
+</body>
+</html>
