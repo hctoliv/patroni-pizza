@@ -106,8 +106,8 @@
     if (!reduce) {
       const s = 1 + hp * (isMobile() ? .18 : .32);
       plate.style.transform = `scale(${s}) rotate(${hp * -12}deg)`;
-      hwL.style.transform = `translateX(${-hp * 30}vw)`;
-      hwR.style.transform = `translateX(${hp * 30}vw)`;
+      hwL.style.transform = `translate(${-hp * 22}vw, ${-hp * 6}vh)`;
+      hwR.style.transform = `translate(${hp * 22}vw, ${-hp * 6}vh)`;
       heroCopy.style.opacity = 1 - clamp(hp * 2.2);
       heroCopy.style.transform = `translateY(${hp * -40}px)`;
     }
