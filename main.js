@@ -15,19 +15,9 @@
   if (!seen && !reduce) {
     root.classList.add('intro-on');
     document.body.style.overflow = 'hidden';
-    const yEl = $('#introYear'), now = new Date().getFullYear();
-    const t0 = performance.now() + 550, dur = 1300;
     let done = false;
-    const tick = t => {
-      const p = clamp((t - t0) / dur);
-      const e = 1 - Math.pow(1 - p, 3);
-      yEl.textContent = Math.round(1984 + (now - 1984) * e);
-      if (p < 1 && !done) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
     const close = () => {
       if (done) return; done = true;
-      yEl.textContent = now;
       intro.classList.add('out');
       document.body.style.overflow = '';
       try { sessionStorage.setItem('patroni-intro', '1'); } catch (e) {}
